@@ -8,11 +8,18 @@ version = "0.1.0"
 description = "CLI for basic AmneziaVPN account and vpn:// token management"
 readme = "README.md"
 requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [{ name = "dar1k-ness" }]
+maintainers = [{ name = "dar1k-ness" }]
 dependencies = []
 
 [project.scripts]
 amnezia-cli = "amnezia_cli.cli:main"
 amz = "amnezia_cli.cli:main"
+
+[project.urls]
+Repository = "https://github.com/dar1k-ness/amnezia-cli"
+Issues = "https://github.com/dar1k-ness/amnezia-cli/issues"
 
 [tool.setuptools.packages.find]
 include = ["amnezia_cli*"]
