@@ -1,0 +1,2 @@
+"""AmneziaCLI package."""
+
