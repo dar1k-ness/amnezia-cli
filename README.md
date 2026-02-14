@@ -1,10 +1,17 @@
 # AmneziaCLI
 
-CLI для локального управления пользователями AmneziaWG (Docker на текущем сервере).
+CLI для управления пользователями AmneziaWG на сервере.
+
+## Требования
+
+- Python 3.8+
+- pip3
+- На сервере установлен AmneziaWG (self-hosted)
 
 ## Установка
 
 ```bash
+git clone git@github.com:dar1k-ness/amnezia-cli.git && cd amnezia-cli
 pip3 install .
 amz --help
 ```
@@ -26,12 +33,10 @@ amz user del <username> --public-key <PUBKEY>
 amz user del <username> --dry-run
 ```
 
-## Опции окружения
+## Если автоопределение не сработало
 
 ```bash
-amz user add <username> --direct
-amz user add <username> --awg-container amnezia-awg
-amz user add <username> --wg-config-path /opt/amnezia/awg/awg0.conf
+amz user add <username> --wg-config-path /opt/amnezia/awg/wg0.conf
 ```
 
 ## Тесты
